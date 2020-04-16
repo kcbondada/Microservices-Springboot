@@ -4,6 +4,7 @@ package com.financialmanagement.FinancialManagement.controller;
 
 
 import javax.persistence.EntityListeners;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.financialmanagement.FinancialManagement.dao.AccountsDao;
 import com.financialmanagement.FinancialManagement.entity.Accounts;
+
+
 
 
 
@@ -44,7 +47,6 @@ public class AccountsController {
 	public Accounts findById(@PathVariable(value = "identifier")Long accIdentifier) {
 		return accountsDao.findById(accIdentifier);
 	}
-
 //	@GetMapping("/ledger/{identifier}/accounts")
 //	public List<Accounts> findByLedger(@PathVariable(value = "identifier") Long ledgerId) {
 //		return accountsDao.findByLedgerId(ledgerId);

@@ -14,6 +14,7 @@ import com.financialmanagement.FinancialManagement.repository.AccountEntryReposi
 
 @Service
 public class AccountEntriesDao {
+	
 	@Autowired
 	private AccountEntryRepository acceRepo;
 
